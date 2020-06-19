@@ -1,10 +1,10 @@
-function transformText(str) {
+function transformText(teks) {
   let regexTest = /[A-Z]/g;
 
-  if (str.match(regexTest)) {
-    return str.toLowerCase();
+  if (teks.match(regexTest)) {
+    return teks.toLowerCase();
   } else {
-    return str.toUpperCase();
+    return teks.toUpperCase();
   }
 }
 
