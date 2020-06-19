@@ -1,11 +1,11 @@
-function transformText(teks) {
-  let regexTest = /[A-Z]/g;
+let myRegex = new RegExp("[A-Z]");
 
-  if (teks.match(regexTest)) {
+function changeSentence(teks) {
+  if (teks.match(myRegex)) {
     return teks.toLowerCase();
   } else {
     return teks.toUpperCase();
   }
 }
 
-export default transformText;
+export { changeSentence };

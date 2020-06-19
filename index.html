@@ -3,7 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modules</title>
+    <title>Exercise Jumat 5</title>
+    <style>
+      html,
+      body {
+        background-color: #eee;
+        font-family: "Balsamiq Sans", cursive;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        margin-left: 100px;
+        flex-wrap: wrap;
+      }
+    </style>
 
     <link
       rel="stylesheet"
@@ -11,24 +25,36 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./asset/style/style.css" />
   </head>
 
   <body>
-    <h1>Text Transform App</h1>
-
-    <div class="form">
-      <div class="isi">
-        <section>
-          <input type="text" placeholder="Check your word" id="input" />
-          <button type="button" class="btn btn-primary" id="button-input">
+    <div class="container">
+      <div class="row">
+        <p class="h3">Cek Sentence</p>
+        <div class="col">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Input Kalimat"
+            id="input"
+          />
+        </div>
+        <div class="col">
+          <button
+            type="button"
+            class="btn btn-block btn-primary"
+            id="btn-input"
+          >
             Check
           </button>
-        </section>
-
-        <section>
-          <p id="text"></p>
-        </section>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p id="show"></p>
+        </div>
       </div>
     </div>
     <script src="main.js" type="module"></script>

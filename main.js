@@ -1,9 +1,9 @@
-import transformText from "./script.js";
+import { changeSentence } from "./script.js";
 
-let button = document.getElementById("button-input");
-let texts = document.getElementById("text");
+let button = document.getElementById("btn-input");
+let teks = document.getElementById("show");
 
 button.addEventListener("click", function () {
   let kata = document.getElementById("input").value;
-  texts.innerHTML = `${transformText(kata)}`;
+  teks.innerHTML = `${changeSentence(kata)}`;
 });
